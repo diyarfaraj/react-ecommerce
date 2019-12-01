@@ -9,7 +9,7 @@ import { withRouter } from 'react-router-dom';
 import { toggleCartHidden } from './../../redux/cart/cart.actions';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (
-	<div className="cart-dropdown">
+	<div className="cart-dropdown test">
 		<div className="cart-items">
 			{cartItems.length ? (
 				cartItems.map((cartItem) => <CartItem key={cartItem.id} item={cartItem} />)
