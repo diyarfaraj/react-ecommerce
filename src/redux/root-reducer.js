@@ -6,6 +6,7 @@ import userReducer from './user/user.reducer';
 
 import cartReducer from './cart/cart.reducer';
 import directoryReducer from './directory/directory.reducer';
+import shopreducer from './shop/shop.reducer';
 
 //set up for what to inlcude in localStorage
 const persistConfig = {
@@ -17,7 +18,8 @@ const persistConfig = {
 const rootReducer = combineReducers({
 	user: userReducer,
 	cart: cartReducer,
-	directory: directoryReducer
+	directory: directoryReducer,
+	shop: shopreducer
 });
 
 //Show some kind of value to display
