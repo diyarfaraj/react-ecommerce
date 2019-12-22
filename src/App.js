@@ -21,7 +21,7 @@ class App extends React.Component {
 		//destructure setCurrentUser off of our props
 		const { setCurrentUser } = this.props;
 
-		this.unsubscribeFromAuth = auth.onAuthStateChanged(
+		/* 	this.unsubscribeFromAuth = auth.onAuthStateChanged(
 			async (userAuth) => {
 				if (userAuth) {
 					const userRef = await createUserProfileDocument(userAuth);
@@ -37,7 +37,7 @@ class App extends React.Component {
 				}
 			},
 			(error) => console.log('Fäiled getting user data: ', error)
-		);
+		); */
 	}
 
 	componentWillUnmount() {
