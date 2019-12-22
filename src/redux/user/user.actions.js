@@ -1,11 +1,57 @@
-import { UserActionsTypes } from "./user.types";
+import UserActionsTypes from './user.types';
 
-// functiion that returns objects
+// function that returns objects
 // each object is in the correct format that the actions needs to be
 
 //here we hold the user thats created from the userAUth
 
-export const setCurrentUser = user => ({
-  type: UserActionsTypes.SET_CURRENT_USER,
-  payload: user
+export const googleSignInStart = () => ({
+	type: UserActionsTypes.GOOGLE_SIGNIN_START
+});
+
+export const signInSuccess = (user) => ({
+	type: UserActionsTypes.SIGNIN_SUCCESS,
+	payload: user
+});
+
+export const signInFailure = (error) => ({
+	type: UserActionsTypes.SIGNIN_FAILURE,
+	payload: error
+});
+
+export const emailSignInStart = (emailAndPassword) => ({
+	type: UserActionsTypes.EMAIL_SIGNIN_START,
+	payload: emailAndPassword
+});
+
+export const checkUserSession = () => ({
+	type: UserActionsTypes.CHECK_USER_SESSION
+});
+
+export const signOutStart = () => ({
+	type: UserActionsTypes.SIGN_OUT_START
+});
+
+export const signOutSuccess = () => ({
+	type: UserActionsTypes.SIGN_OUT_SUCCESS
+});
+
+export const signOutFailure = (error) => ({
+	type: UserActionsTypes.SIGN_OUT_FAILURE,
+	payload: error
+});
+
+export const signUpStart = (userCredentials) => ({
+	type: UserActionsTypes.SIGN_UP_START,
+	payload: userCredentials
+});
+
+export const signUpSuccess = ({ user, addtionalData }) => ({
+	type: UserActionsTypes.SIGN_UP_SUCCESS,
+	payload: { user, addtionalData }
+});
+
+export const signUpFailure = (error) => ({
+	type: UserActionsTypes.SING_UP_FAILURE,
+	payload: error
 });
