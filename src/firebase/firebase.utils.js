@@ -2,15 +2,19 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 const config = {
-	apiKey: 'AIzaSyD5UeJ2AbzGgniDBT4cKv4LHUGscktQnsg',
-	authDomain: 'react-ecommerce-34e61.firebaseapp.com',
-	databaseURL: 'https://react-ecommerce-34e61.firebaseio.com',
-	projectId: 'react-ecommerce-34e61',
-	storageBucket: 'react-ecommerce-34e61.appspot.com',
-	messagingSenderId: '638938449847',
-	appId: '1:638938449847:web:1a3b921aed1db26fd18a32',
-	measurementId: 'G-2PCT8HJPGZ'
+	apiKey: process.env.REACT_APP_APIKEY,
+	authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+	databaseURL: process.env.REACT_APP_DATABASEURL,
+	projectId: process.env.REACT_APP_PROJECTID,
+	storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+	messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+	appId: process.env.REACT_APP_APPID,
+	measurementId: process.env.REACT_APP_MEASUREMENTID
 };
 
 firebase.initializeApp(config);

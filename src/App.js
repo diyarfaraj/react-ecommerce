@@ -14,6 +14,10 @@ import { createStructuredSelector } from 'reselect';
 
 import { checkUserSession } from './redux/user/user.actions';
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 const App = ({ checkUserSession, currentUser }) => {
 	useEffect(
 		() => {
