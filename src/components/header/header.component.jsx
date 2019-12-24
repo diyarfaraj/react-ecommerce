@@ -21,7 +21,7 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
 			{currentUser ? (
 				<div className="option">
 					{' '}
-					<span>Welcome {currentUser.displayName}</span>
+					<span>WELCOME {currentUser.displayName}</span>
 				</div>
 			) : (
 				<div />
