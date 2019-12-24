@@ -1,7 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
-import './firebase.utils';
 
 const config = {
 	apiKey: 'AIzaSyD5UeJ2AbzGgniDBT4cKv4LHUGscktQnsg',
@@ -20,12 +19,8 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 	if (!userAuth) return;
 
 	const userRef = firestore.doc(`users/${userAuth.uid}`);
-	/* const collectionRef = firestore.collection('users'); */
 
 	const snapShot = await userRef.get();
-	/* const collectionSnapshot = await collectionRef.get();
-
-	console.log({ collection: collectionSnapshot.docs.map((doc) => doc.data()) }); */
 
 	if (!snapShot.exists) {
 		const { displayName, email } = userAuth;
@@ -39,7 +34,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 				...additionalData
 			});
 		} catch (error) {
-			console.log('Error creäting a user: ', error.message);
+			console.log('Error creating a user: ' + error.message);
 		}
 	}
 
@@ -49,7 +44,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 //instead of manually adding collection items into firebase, use this function and a bit more code in app.js
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
 	const collectionRef = firestore.collection(collectionKey);
-	console.log(collectionRef);
+	console.log('THIS IS::::' + collectionRef);
 
 	const batch = firestore.batch();
 	objectsToAdd.forEach((obj) => {
