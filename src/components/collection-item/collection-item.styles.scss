@@ -22,6 +22,13 @@
     top: 255px;
     display: none;
 
+    @media screen and (max-width: 800px) {
+      display: block;
+      opacity: .9;
+      min-width: unset;
+      padding: 0 10px;
+    }
+
   }
 
   &:hover {
@@ -49,6 +56,21 @@
 
     .price {
       width: 10%;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+  
+      .custom-button {
+        opacity: unset;
+      }
     }
   }
 }
