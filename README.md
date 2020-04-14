@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Demo CountPages alpha](https://j.gifs.com/nxjEE5.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
