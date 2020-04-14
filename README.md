@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [![Demo CountPages alpha](https://j.gifs.com/RODQQE.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 
+[![Demo CountPages alpha](https://j.gifs.com/RODQQE.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 ## Browsing
 
 [![test](https://j.gifs.com/r8nLjp.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
