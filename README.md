@@ -1,12 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Registration
+## Registration
 
 [![Demo CountPages alpha](https://j.gifs.com/RODQQE.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 
-##Browsing
+## Browsing
 
-[![Demo CountPages alph](https://j.gifs.com/r8nLjp.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
+[![test](https://j.gifs.com/r8nLjp.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 
 
 ## Available Scripts
