@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##Browsing
 
-[![Demo CountPages alpha](https://j.gifs.com/r8nLjp.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
+[![Demo CountPages alph](https://j.gifs.com/r8nLjp.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 
 
 ## Available Scripts
