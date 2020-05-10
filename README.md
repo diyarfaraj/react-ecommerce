@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Registration
+## Demo
+
+To visit the live demo click [here](https://diyar-react-ecommerce.netlify.com/)
 
 [![Demo CountPages alpha](https://j.gifs.com/RODQQE.gif)](https://www.youtube.com/watch?v=AWQ_B1ZtqZI)
 
